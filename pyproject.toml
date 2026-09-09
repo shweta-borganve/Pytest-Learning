@@ -1,0 +1,22 @@
+[project]
+name = "pytest-learning"
+version = "0.1.0"
+description = "Learning Python unit testing with pytest"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests>=2.34.2",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=7.1.0",
+] 
+
+[tool.pytest.ini_options]
+testpaths = ["tests"] 
+addopts = "-v" 
+markers = [
+    "calculator: tests related to calculator functionality"
+] 
